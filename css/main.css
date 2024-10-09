@@ -1,0 +1,220 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-size: 14px;
+}
+
+.container { 
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+
+}
+/* header */
+
+.header {
+    background-color: #F1F1F1;
+    padding-top: 25px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 76px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 32px;
+    color: #000;
+    padding-right: 10px;
+   
+    position: relative;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #070707;
+    color:white;
+    padding: 7px 22px;
+    border-radius: 30px;
+    font-size: 18px;
+    transition:  background-color 0.2s ease-in, top 0.2s ease-in;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #323232;
+}
+
+.btn:active {
+    position: relative;
+    top:1px;
+    background-color: #000;
+
+
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #FDA300;
+    border-radius: 50%;
+
+}
+
+/* Nav */
+
+.nav__list {
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+.nav__link {
+color: #000;
+}
+
+.nav__link.active {
+    color: #606060;
+}
+
+/* header__row */
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.header__content {
+    max-width: 500px;
+    margin-top: 124px;
+}
+
+.header__text {
+    font-weight: 600;
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.header__content p {
+    font-weight: 400px;
+    line-height: 2;
+    
+}
+
+.services {
+    padding: 90px 0;
+
+}
+
+.services-row {
+display: flex;
+column-gap: 30px;
+}
+
+.service-card-image {
+    margin-bottom: 30px;
+
+}
+
+.service-card-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.service-card p {
+    line-height: 2;
+}
+
+/* portfolio */
+
+.portfolio {
+    background-color: #F1F1F1;
+    padding: 90px 0;
+}
+
+
+.portfolio-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.title-1 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.project {
+    text-align: center;
+}
+
+.project + .project {
+    margin-top: 90px;
+}
+
+.project-image {
+    margin-bottom: 40px;
+}
+
+.project-title {
+    font-size: 18px;
+}
+
+.project-title a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* footer */
+
+.contacts {
+    padding: 90px 0;
+    text-align: center;
+
+}
+
+.contacts-title {
+margin-bottom: 40px;
+}
+.contacts-content {
+    margin-bottom: 40px;
+    
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+
+.contacts-content p+p {
+margin-top: 1em;
+
+}
+.contacts-button {
+margin-bottom: 80px;
+}
+
+
+.contacts-social {
+display: flex;
+justify-content: center;
+column-gap: 60px;
+align-items: center;
+margin-bottom: 40px;
+}
+
+.contacts-footer {
+    color: #828282;
+}
