@@ -81,6 +81,10 @@ body {
 
 }
 
+.nav-button {
+    display: none;
+}
+
 .nav__link {
 color: #000;
 }
@@ -122,11 +126,18 @@ color: #000;
 .services-row {
 display: flex;
 column-gap: 30px;
+flex-wrap: wrap;
+row-gap: 60px;
 }
 
 .service-card-image {
     margin-bottom: 30px;
 
+}
+
+.service-card {
+    flex: 1 1 0;
+    min-width: 315px;
 }
 
 .service-card-title {
@@ -138,6 +149,7 @@ column-gap: 30px;
 
 .service-card p {
     line-height: 2;
+   
 }
 
 /* portfolio */

@@ -6,6 +6,7 @@
     <title>Freelancer Portfolio</title>
     <link rel="stylesheet" href="./css//main.css">
     <link rel="stylesheet" href="./css//media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
 <body>
@@ -14,7 +15,7 @@
         <div class="container">
             <div class="header__nav">
                 <a href="#!" class="logo">True</a>
-                <nav class="nav">
+                <nav id="nav" class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#!" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#!" class="nav__link">Works</a></li>
@@ -22,15 +23,24 @@
                     <li class="nav__item"><a href="#!" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#!" class="nav__link">Contact</a></li>
                 </ul>
+                <button id="nav-button" class="nav-button">
+                    <img id="nav-button-image" src="./image/icons/NAV-mobile.svg" alt="Nav button">
+                </button>
             </nav>
             </div>
+            
             <!-- Header content -->
              <div class="header__row">
-                <div class="header__content">
-                    <h1 class="header__text"> Kelvin Kramer<br>Designer & Developer</h1>
+                <div class="header__content" data-aos="fade-up">
+                    <h1 class="header__text"> Kelvin Kramer<br> <span class="header__text_s">Designer & Developer </span></h1>
                     <p> I’m a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here. </p>
                 </div>
-                <div class="header__img"><img src="./image/header/hero.svg" alt="hero"></div>
+                <div class="header__img" data-aos="fade-left">
+                    <picture>
+                        <source media="(max-width:700px)" srcset="./image/header/hero-mobile.svg">
+                        <img src="./image/header/hero.svg" alt="hero">
+                    </picture>
+                </div>
              </div>
         </div>
 
@@ -41,19 +51,19 @@
         <div class="container">
             <div class="services-row">
 
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-down">
                     <img src="./image/services/graphic 1.svg" alt="" class="service-card-image">
                     <h3 class="service-card-title">UI/UX Design</h3>
                     <p>Our design is translated into comprehensive digital environments built on latest development standards.</p>
                 </div>
 
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-down">
                     <img src="./image/services/Vector.svg" alt="" class="service-card-image">
                     <h3 class="service-card-title">Development</h3>
                     <p>Our design is translated into comprehensive digital environments built on latest development standards.</p>
                 </div>
 
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-down">
                     <img src="./image/services/Vector1.svg" alt="" class="service-card-image">
                     <h3 class="service-card-title">software testing</h3>
                     <p>Our design is translated into comprehensive digital environments built on latest development standards.</p>
@@ -69,17 +79,17 @@
                 <h2 class="title-1">Portfolio</h2>
             </div>
 
-            <div class="project">
+            <div class="project" data-aos="flip-up">
                 <img src="./image/portfel/first.svg" alt="Online fashion store" class="project-image">
                 <h3 class="project-title"><a href="#!">Online fashion store - Homepage</a></h3>
             </div>
 
-            <div class="project">
+            <div class="project" data-aos="flip-up">
                 <img src="./image/portfel/second.svg" alt="Reebok Store" class="project-image">
                 <h3 class="project-title"><a href="#!">Reebok Store - Concept</a></h3>
             </div>
 
-            <div class="project">
+            <div class="project" data-aos="flip-up">
                 <img src="./image/portfel/third.svg" alt="Braun Landing Page" class="project-image">
                 <h3 class="project-title"><a href="#!">Braun Landing Page - Concept</a></h3>
             </div>
@@ -88,28 +98,31 @@
 
     <footer class="contacts">
         <div class="container">
-            <div class="contacts-title"><h2 class="title-1">Contacts</h2></div>
-            <div class="contacts-content">
+            <div class="contacts-title">
+                <h2 class="title-1">Contacts</h2>
+            </div>
+
+            <div class="contacts-content" data-aos="fade-down">
                 <p>Want to know more or just chat? <br> You are welcome!</p>
             </div>
-            <div class="contacts-button">
+            <div class="contacts-button" data-aos="fade-down">
                 <a href="#!" class="btn">Send message</a>
             </div>
-            <div class="contacts-social">
+            <div class="contacts-social" data-aos="zoom-in">
                 <a href="#!"><img src="./image/socials/isntagram.svg" alt=""></a>
                 <a href="#!"><img src="./image/socials/inst2.svg" alt=""></a>
                 <a href="#!"><img src="./image/socials/be.svg" alt=""></a>
                 <a href="#!"><img src="./image/socials/ball.svg" alt=""></a>
             </div>
 
-            <div class="contacts-footer">
+            <div class="contacts-footer" data-aos="fade-up">
                 <p>Like me on <br> LinkedIn, Instagram, Behance, Dribble</p>
             </div>
         </div>
     </footer>
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/Main.js"></script>
     
 </body>
